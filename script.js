@@ -7,7 +7,7 @@ function getWeather() {
         return;
     }
 
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric";
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     fetch(url)
         .then(response => response.json())
@@ -17,13 +17,13 @@ function getWeather() {
                 return;
             }
 
-            const html = '
+            const html = `
                 <h3>${data.name}</h3>
                 <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
                 <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
                 <p><strong>Weather:</strong> ${data.weather[0].description}</p>
                 <p><strong>WindSpeed:</strong> ${data.wind.speed} m/s</p>
-            ';
+            `;
         document.getElementById("result").innerHTML= html;
 })
 .catch(error =>console.error(error));
