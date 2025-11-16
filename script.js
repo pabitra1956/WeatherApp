@@ -28,8 +28,3 @@ function getWeather() {
 })
 .catch(error =>console.error(error));
 }
-
-            document.getElementById("result").innerHTML = html;
-        )
-        .catch(error => console.error(error));
-}
