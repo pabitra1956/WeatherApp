@@ -24,7 +24,4 @@ function getWeather() {
                 <p><strong>Weather:</strong> ${data.weather[0].description}</p>
                 <p><strong>WindSpeed:</strong> ${data.wind.speed} m/s</p>
             `;
-        document.getElementById("result").innerHTML= html;
-})
-.catch(error =>console.error(error));
 }
