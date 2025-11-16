@@ -16,7 +16,6 @@ function getWeather() {
                 document.getElementById("result").innerHTML = "<p>City not found!</p>";
                 return;
             }
-        }
 
             const html = `
                 <h3>${data.name}</h3>
@@ -26,3 +25,4 @@ function getWeather() {
                 <p><strong>WindSpeed:</strong> ${data.wind.speed} m/s</p>
             `;
 }
+              }
