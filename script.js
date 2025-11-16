@@ -16,6 +16,7 @@ function getWeather() {
                 document.getElementById("result").innerHTML = "<p>City not found!</p>";
                 return;
             }
+        }
 
             const html = `
                 <h3>${data.name}</h3>
