@@ -30,6 +30,6 @@ function getWeather() {
 }
 
             document.getElementById("result").innerHTML = html;
-        })
+        )
         .catch(error => console.error(error));
 }
