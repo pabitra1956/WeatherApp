@@ -13,8 +13,8 @@ function getWeather() {
                 document.getElementById("result").innerHTML = "<p>City not found!</p>";
                 return;
             }
-            const html = `
-                <h3>${data.name}</h3>
+            const html = 
+                `<h3>${data.name}</h3>
                 <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
                 <p><strong>Humidity:</strong> ${data.main.humidity} %</p>
                 <p><strong>Weather:</strong> ${data.weather[0].description}</p>
