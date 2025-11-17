@@ -1,4 +1,4 @@
-const API_KEY = "YOUR_API_KEY"; // replace with your key
+const API_KEY = "e3e3bc6382004fbeebce520ec644a60e"; // replace with your key
 
 document.getElementById("searchForm").addEventListener("submit", async function (e) {
   e.preventDefault();
@@ -21,7 +21,7 @@ async function getWeather(city) {
 
   try {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${API_KEY}&units=metric`;
-    console.log("Request URL:", url.replace(API_KEY, "XXX"));
+    console.log("Request URL:", url.replace(API_KEY, "e3e3bc6382004fbeebce520ec644a60e"));
     const res = await fetch(url);
     const text = await res.text(); // read raw for helpful errors
     if (!res.ok) {
