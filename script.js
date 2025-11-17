@@ -15,10 +15,10 @@ function getWeather() {
             }
             const html = 
                 "<h3>${data.name}</h3>"
- "<p><strong>Temperature:</strong> " + data.getMainTemp() + " °C</p>";
- "<p><strong>Humidity:</strong> " + data.getMain().gethumidity() + " %</p>";
- "<p><strong>Weather:</strong> " +  data.getweather().get(0).getDescription() + "</p>";
-  "<p><strong>WindSpeed:</strong> " + data.getWind().getSpeed() + " m/s</p>";
+ "<p><strong>Temperature:</strong> " + data.main.Temp + " °C</p>";
+ "<p><strong>Humidity:</strong> " + data.Main.humidity + " %</p>";
+ "<p><strong>Weather:</strong> " +  data.weather[0].Description + "</p>";
+  "<p><strong>WindSpeed:</strong> " + data.Wind.Speed + " m/s</p>";
             
 document.getElementById("result").innerHTML=html;
 })
